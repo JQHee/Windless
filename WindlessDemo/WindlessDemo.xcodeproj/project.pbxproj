@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		185C4083212BDFA0008C6978 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C4082212BDFA0008C6978 /* AppDelegate.swift */; };
+		185C4085212BDFA0008C6978 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C4084212BDFA0008C6978 /* ViewController.swift */; };
+		185C4088212BDFA0008C6978 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185C4086212BDFA0008C6978 /* Main.storyboard */; };
+		185C408A212BDFA3008C6978 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185C4089212BDFA3008C6978 /* Assets.xcassets */; };
+		185C408D212BDFA3008C6978 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185C408B212BDFA3008C6978 /* LaunchScreen.storyboard */; };
+		185C4098212BDFA3008C6978 /* WindlessDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C4097212BDFA3008C6978 /* WindlessDemoTests.swift */; };
+		185C40A3212BDFA3008C6978 /* WindlessDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C40A2212BDFA3008C6978 /* WindlessDemoUITests.swift */; };
+		185C40B1212BDFD5008C6978 /* UIView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C40B0212BDFD5008C6978 /* UIView-Extension.swift */; };
+		185C40B3212BE06C008C6978 /* WindlessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C40B2212BE06C008C6978 /* WindlessViewModel.swift */; };
+		185C40B5212BE142008C6978 /* WindlessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C40B4212BE142008C6978 /* WindlessTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		185C4094212BDFA3008C6978 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 185C4077212BDFA0008C6978 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 185C407E212BDFA0008C6978;
+			remoteInfo = WindlessDemo;
+		};
+		185C409F212BDFA3008C6978 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 185C4077212BDFA0008C6978 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 185C407E212BDFA0008C6978;
+			remoteInfo = WindlessDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		185C407F212BDFA0008C6978 /* WindlessDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WindlessDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		185C4082212BDFA0008C6978 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		185C4084212BDFA0008C6978 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		185C4087212BDFA0008C6978 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		185C4089212BDFA3008C6978 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		185C408C212BDFA3008C6978 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		185C408E212BDFA3008C6978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185C4093212BDFA3008C6978 /* WindlessDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WindlessDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		185C4097212BDFA3008C6978 /* WindlessDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindlessDemoTests.swift; sourceTree = "<group>"; };
+		185C4099212BDFA3008C6978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185C409E212BDFA3008C6978 /* WindlessDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WindlessDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		185C40A2212BDFA3008C6978 /* WindlessDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindlessDemoUITests.swift; sourceTree = "<group>"; };
+		185C40A4212BDFA3008C6978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185C40B0212BDFD5008C6978 /* UIView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extension.swift"; sourceTree = "<group>"; };
+		185C40B2212BE06C008C6978 /* WindlessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindlessViewModel.swift; sourceTree = "<group>"; };
+		185C40B4212BE142008C6978 /* WindlessTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindlessTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		185C407C212BDFA0008C6978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185C4090212BDFA3008C6978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185C409B212BDFA3008C6978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		185C4076212BDFA0008C6978 = {
+			isa = PBXGroup;
+			children = (
+				185C4081212BDFA0008C6978 /* WindlessDemo */,
+				185C4096212BDFA3008C6978 /* WindlessDemoTests */,
+				185C40A1212BDFA3008C6978 /* WindlessDemoUITests */,
+				185C4080212BDFA0008C6978 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		185C4080212BDFA0008C6978 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				185C407F212BDFA0008C6978 /* WindlessDemo.app */,
+				185C4093212BDFA3008C6978 /* WindlessDemoTests.xctest */,
+				185C409E212BDFA3008C6978 /* WindlessDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		185C4081212BDFA0008C6978 /* WindlessDemo */ = {
+			isa = PBXGroup;
+			children = (
+				185C4082212BDFA0008C6978 /* AppDelegate.swift */,
+				185C4084212BDFA0008C6978 /* ViewController.swift */,
+				185C4086212BDFA0008C6978 /* Main.storyboard */,
+				185C4089212BDFA3008C6978 /* Assets.xcassets */,
+				185C408B212BDFA3008C6978 /* LaunchScreen.storyboard */,
+				185C408E212BDFA3008C6978 /* Info.plist */,
+				185C40B0212BDFD5008C6978 /* UIView-Extension.swift */,
+				185C40B2212BE06C008C6978 /* WindlessViewModel.swift */,
+				185C40B4212BE142008C6978 /* WindlessTableViewCell.swift */,
+			);
+			path = WindlessDemo;
+			sourceTree = "<group>";
+		};
+		185C4096212BDFA3008C6978 /* WindlessDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				185C4097212BDFA3008C6978 /* WindlessDemoTests.swift */,
+				185C4099212BDFA3008C6978 /* Info.plist */,
+			);
+			path = WindlessDemoTests;
+			sourceTree = "<group>";
+		};
+		185C40A1212BDFA3008C6978 /* WindlessDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				185C40A2212BDFA3008C6978 /* WindlessDemoUITests.swift */,
+				185C40A4212BDFA3008C6978 /* Info.plist */,
+			);
+			path = WindlessDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		185C407E212BDFA0008C6978 /* WindlessDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 185C40A7212BDFA3008C6978 /* Build configuration list for PBXNativeTarget "WindlessDemo" */;
+			buildPhases = (
+				185C407B212BDFA0008C6978 /* Sources */,
+				185C407C212BDFA0008C6978 /* Frameworks */,
+				185C407D212BDFA0008C6978 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WindlessDemo;
+			productName = WindlessDemo;
+			productReference = 185C407F212BDFA0008C6978 /* WindlessDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		185C4092212BDFA3008C6978 /* WindlessDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 185C40AA212BDFA3008C6978 /* Build configuration list for PBXNativeTarget "WindlessDemoTests" */;
+			buildPhases = (
+				185C408F212BDFA3008C6978 /* Sources */,
+				185C4090212BDFA3008C6978 /* Frameworks */,
+				185C4091212BDFA3008C6978 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				185C4095212BDFA3008C6978 /* PBXTargetDependency */,
+			);
+			name = WindlessDemoTests;
+			productName = WindlessDemoTests;
+			productReference = 185C4093212BDFA3008C6978 /* WindlessDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		185C409D212BDFA3008C6978 /* WindlessDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 185C40AD212BDFA3008C6978 /* Build configuration list for PBXNativeTarget "WindlessDemoUITests" */;
+			buildPhases = (
+				185C409A212BDFA3008C6978 /* Sources */,
+				185C409B212BDFA3008C6978 /* Frameworks */,
+				185C409C212BDFA3008C6978 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				185C40A0212BDFA3008C6978 /* PBXTargetDependency */,
+			);
+			name = WindlessDemoUITests;
+			productName = WindlessDemoUITests;
+			productReference = 185C409E212BDFA3008C6978 /* WindlessDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		185C4077212BDFA0008C6978 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					185C407E212BDFA0008C6978 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					185C4092212BDFA3008C6978 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 185C407E212BDFA0008C6978;
+					};
+					185C409D212BDFA3008C6978 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 185C407E212BDFA0008C6978;
+					};
+				};
+			};
+			buildConfigurationList = 185C407A212BDFA0008C6978 /* Build configuration list for PBXProject "WindlessDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 185C4076212BDFA0008C6978;
+			productRefGroup = 185C4080212BDFA0008C6978 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				185C407E212BDFA0008C6978 /* WindlessDemo */,
+				185C4092212BDFA3008C6978 /* WindlessDemoTests */,
+				185C409D212BDFA3008C6978 /* WindlessDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		185C407D212BDFA0008C6978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185C408D212BDFA3008C6978 /* LaunchScreen.storyboard in Resources */,
+				185C408A212BDFA3008C6978 /* Assets.xcassets in Resources */,
+				185C4088212BDFA0008C6978 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185C4091212BDFA3008C6978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185C409C212BDFA3008C6978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		185C407B212BDFA0008C6978 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185C40B1212BDFD5008C6978 /* UIView-Extension.swift in Sources */,
+				185C4085212BDFA0008C6978 /* ViewController.swift in Sources */,
+				185C40B5212BE142008C6978 /* WindlessTableViewCell.swift in Sources */,
+				185C4083212BDFA0008C6978 /* AppDelegate.swift in Sources */,
+				185C40B3212BE06C008C6978 /* WindlessViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185C408F212BDFA3008C6978 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185C4098212BDFA3008C6978 /* WindlessDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185C409A212BDFA3008C6978 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185C40A3212BDFA3008C6978 /* WindlessDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		185C4095212BDFA3008C6978 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 185C407E212BDFA0008C6978 /* WindlessDemo */;
+			targetProxy = 185C4094212BDFA3008C6978 /* PBXContainerItemProxy */;
+		};
+		185C40A0212BDFA3008C6978 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 185C407E212BDFA0008C6978 /* WindlessDemo */;
+			targetProxy = 185C409F212BDFA3008C6978 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		185C4086212BDFA0008C6978 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				185C4087212BDFA0008C6978 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		185C408B212BDFA3008C6978 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				185C408C212BDFA3008C6978 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		185C40A5212BDFA3008C6978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		185C40A6212BDFA3008C6978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		185C40A8212BDFA3008C6978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WindlessDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nncb.WindlessDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		185C40A9212BDFA3008C6978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WindlessDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nncb.WindlessDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		185C40AB212BDFA3008C6978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WindlessDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nncb.WindlessDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WindlessDemo.app/WindlessDemo";
+			};
+			name = Debug;
+		};
+		185C40AC212BDFA3008C6978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WindlessDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nncb.WindlessDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WindlessDemo.app/WindlessDemo";
+			};
+			name = Release;
+		};
+		185C40AE212BDFA3008C6978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WindlessDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nncb.WindlessDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WindlessDemo;
+			};
+			name = Debug;
+		};
+		185C40AF212BDFA3008C6978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WindlessDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nncb.WindlessDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WindlessDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		185C407A212BDFA0008C6978 /* Build configuration list for PBXProject "WindlessDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185C40A5212BDFA3008C6978 /* Debug */,
+				185C40A6212BDFA3008C6978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		185C40A7212BDFA3008C6978 /* Build configuration list for PBXNativeTarget "WindlessDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185C40A8212BDFA3008C6978 /* Debug */,
+				185C40A9212BDFA3008C6978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		185C40AA212BDFA3008C6978 /* Build configuration list for PBXNativeTarget "WindlessDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185C40AB212BDFA3008C6978 /* Debug */,
+				185C40AC212BDFA3008C6978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		185C40AD212BDFA3008C6978 /* Build configuration list for PBXNativeTarget "WindlessDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185C40AE212BDFA3008C6978 /* Debug */,
+				185C40AF212BDFA3008C6978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 185C4077212BDFA0008C6978 /* Project object */;
+}
